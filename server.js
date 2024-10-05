@@ -6,7 +6,8 @@ import dotenv from "dotenv";
 // Import POST model
 dotenv.config();
 // MongoDB connection URL
-const mongooseUrl = process.env.MANGO_URL;
+const mongooseUrl =
+  "mongodb+srv://Thinasharma45:Thina9677@blog.pkvb0ss.mongodb.net/blogdb";
 
 // Establish MongoDB connection
 const dbConnection = async () => {
