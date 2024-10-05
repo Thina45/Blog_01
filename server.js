@@ -1,11 +1,12 @@
 import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
-import POST from "./Models/post.js"; // Import POST model
-
+import POST from "./Models/post.js";
+import dotenv from "dotenv";
+// Import POST model
+dotenv.config();
 // MongoDB connection URL
-const mongooseUrl =
-  "mongodb+srv://Thinasharma45:Thina9677@blog.pkvb0ss.mongodb.net/blogdb";
+const mongooseUrl = process.env.MANGO_URL;
 
 // Establish MongoDB connection
 const dbConnection = async () => {
